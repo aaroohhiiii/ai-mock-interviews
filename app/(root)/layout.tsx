@@ -2,12 +2,12 @@ import React, { ReactNode } from 'react'
 import { Toaster } from 'sonner'
 import Image from 'next/image'
 import Link from 'next/link'
-import { isAuthenticated } from '@/lib/actions/auth.action'
-import { redirect } from 'next/navigation'
+// import { isAuthenticated } from '@/lib/actions/auth.action'
+// import { redirect } from 'next/navigation'
 const  Routelayout = async({children}:{children:ReactNode}) => {
-  const isUserAuthenticated= await isAuthenticated();
-  if(!isUserAuthenticated)
-    redirect('/sign-in');
+  // const isUserAuthenticated= await isAuthenticated();
+  // if(!isUserAuthenticated)
+  //   redirect('/');
   return (
     <div className='root-layout'>
       <nav>
